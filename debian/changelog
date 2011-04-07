@@ -1,3 +1,27 @@
+jzmq (2.1.0-1tuomjarv4~maverick1) maverick; urgency=low
+
+  * Fixed dependency to refer to correct libzmq0 version
+
+ -- Tuomas Järvensivu <tuomas.jarvensivu@reaktor.fi>  Thu, 07 Apr 2011 15:31:47 +0300
+
+jzmq (2.1.0-1tuomjarv3~maverick1) maverick; urgency=low
+
+  * Packaging for Ubuntu
+
+ -- Tuomas Järvensivu <tuomas.jarvensivu@reaktor.fi>  Thu, 07 Apr 2011 14:50:23 +0300
+
+jzmq (2.1.0-1tuomjarv2~maverick1) maverick; urgency=low
+
+  * Packaging for Ubuntu
+
+ -- Tuomas Järvensivu <tuomas.jarvensivu@reaktor.fi>  Thu, 07 Apr 2011 13:41:27 +0300
+
+jzmq (2.1.0-1tuomjarv1~maverick1) maverick; urgency=low
+
+  * Packaging for Ubuntu
+
+ -- Tuomas Järvensivu <tuomas.jarvensivu@reaktor.fi>  Tue, 05 Apr 2011 16:04:50 +0300
+
 jzmq (2.1.0-1) unstable; urgency=low
 
   * Development release

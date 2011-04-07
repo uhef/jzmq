@@ -1,3 +1,5 @@
+.NOTPARALLEL:
+
 AM_JAVACFLAGS=-classpath $(top_builddir)/src
 
 jarfile = zmq-perf.jar

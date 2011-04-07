@@ -3,7 +3,7 @@
 #export DH_VERBOSE=1
 
 DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
-
+JAVA_HOME = $(shell readlink -f `which java` | xargs dirname | xargs dirname | xargs dirname)
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
     MAKEFLAGS += -j$(NUMJOBS)
@@ -14,7 +14,9 @@ configure: configure-stamp
 configure-stamp:
 	dh_testdir
 
-	./configure $(CROSS) \
+	./autogen.sh
+
+	JAVA_HOME=$(JAVA_HOME) ./configure $(CROSS) \
 	    --prefix=/usr \
 	    CFLAGS="$(CFLAGS)" \
 	    LDFLAGS="-Wl,--as-needed -Wl,-z,defs" \

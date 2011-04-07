@@ -1,3 +1,5 @@
+.NOTPARALLEL:
+
 jarfile = zmq.jar
 jardir = $(datadir)/java
 
